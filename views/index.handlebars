@@ -1,7 +1,16 @@
-<container class="text-center">
+<div class="container">
 
+<div class="row">
+<div class="col-md-12">
 <h1 id="burgerTitle">The Burger Logger!</h1>
+<img src="/assets/img/burgers.jpeg" height="150" alt="burger" class="img-thumbnail">
+</div>
 
+
+
+<div class="row">
+<div class="col-md-5">
+</div>
 <div id="readyBox">
 <ul>
   {{#each burgers}}
@@ -13,9 +22,11 @@
     {{/unless}}
   {{/each}}
 </ul>
-
+</div>
 </div>
 
+
+<div class="col-md-5">
 <div id="eatenBox">
 <ul>
   {{#each burgers}}
@@ -28,7 +39,9 @@
 </ul>
 
 </div>
-
+</div>
+</div>
+<div class="row">
 <div id="addBurger">
 <form class="create-form">
   <div class="form-group">
@@ -38,5 +51,5 @@
   <button type="submit">Add Burger</button>
 </form>
 </div>
-
+</div>
 </container>
